@@ -144,3 +144,54 @@ Before you submit your solution, you need to save your progress with git.
   * For additional information on submitting assignments in CodeGrade: [Getting Started in Canvas](https://help.codegrade.com/for-students/getting-started/getting-started-in-canvas)
 
 
+## Application Functionality
+
+This project implements a **Song class** that represents songs within a music library system.  
+The class tracks both **individual song information** and **global statistics about the music library**.
+
+### Features
+
+Each `Song` object stores:
+
+- Song name
+- Artist
+- Genre
+
+The application also maintains global information about the music library using **class attributes**.
+
+### Class Attributes
+
+| Attribute | Description |
+|--------|--------|
+| `count` | Total number of songs created |
+| `genres` | List of unique genres |
+| `artists` | List of unique artists |
+| `genre_count` | Dictionary counting songs per genre |
+| `artist_count` | Dictionary counting songs per artist |
+
+### Example
+
+```python
+Song("Halo", "Beyonce", "Pop")
+Song("99 Problems", "Jay Z", "Rap")
+Song("Smells Like Teen Spirit", "Nirvana", "Rock")
+```
+
+Results:
+
+```
+Song.count
+3
+
+Song.genres
+['Pop', 'Rap', 'Rock']
+
+Song.genre_count
+{'Pop': 1, 'Rap': 1, 'Rock': 1}
+```
+
+### Test Results
+
+Below is a screenshot showing all tests passing:
+
+![Test Results](tests-passed.png)
